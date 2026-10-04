@@ -18,8 +18,10 @@ name: Mobile app
 
 on:
   push:
-    paths: ["app/**", ".github/workflows/mobile.yml"]
+    # Listing `tags` alone would disable branch builds, so list both.
+    branches: ["**"]
     tags: ["v*"]
+    paths: ["app/**", ".github/workflows/mobile.yml"]
   pull_request:
     paths: ["app/**", ".github/workflows/mobile.yml"]
   workflow_dispatch:
