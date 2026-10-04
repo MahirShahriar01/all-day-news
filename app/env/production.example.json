@@ -1,0 +1,4 @@
+{
+  "API_BASE_URL": "https://news.example.com",
+  "APP_FLAVOR": "production"
+}

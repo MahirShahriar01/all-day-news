@@ -1,0 +1,475 @@
+{
+ "schema_version": 1,
+ "settings": {
+  "branding": {
+   "app_name": "All in One News",
+   "tagline": "Every channel. One place.",
+   "logo_url": "",
+   "splash_image_url": ""
+  },
+  "theme": {
+   "mode": "dark",
+   "primary_color": "#FF7C4DFF",
+   "secondary_color": "#FF00E5FF",
+   "accent_color": "#FFFF4081",
+   "background_color": "#FF0A0E1A",
+   "surface_color": "#FF141A2E",
+   "text_color": "#FFF5F7FF",
+   "gradient_start": "#FF7C4DFF",
+   "gradient_end": "#FF00E5FF",
+   "corner_radius": 20,
+   "card_style": "glass",
+   "enable_animations": true
+  },
+  "layout": {
+   "home_background_url": "",
+   "home_background_opacity": 0.35,
+   "show_featured": true,
+   "featured_title": "Featured",
+   "featured_style": "carousel",
+   "show_search": true,
+   "show_category_tabs": true,
+   "grid_columns": 3,
+   "show_descriptions": true,
+   "announcement": {
+    "enabled": false,
+    "text": "",
+    "url": ""
+   }
+  },
+  "browser": {
+   "default_open_mode": "custom_tab",
+   "show_toolbar": true,
+   "allow_open_in_external_browser": true,
+   "allow_share": true
+  },
+  "legal": {
+   "privacy_policy_url": "",
+   "terms_url": "",
+   "contact_email": "",
+   "publisher_name": "",
+   "about_text": "All in One News brings your favourite news, live streams and information services together."
+  }
+ },
+ "categories": [
+  {
+   "id": 1,
+   "name": "News",
+   "slug": "news",
+   "description": "Breaking news and headlines from around the world.",
+   "icon_name": "newspaper",
+   "icon_url": "",
+   "background_url": "",
+   "color": "#FF7C4DFF"
+  },
+  {
+   "id": 2,
+   "name": "Live Streaming",
+   "slug": "live-streaming",
+   "description": "Live TV, streams and broadcasts.",
+   "icon_name": "live_tv",
+   "icon_url": "",
+   "background_url": "",
+   "color": "#FFFF4081"
+  },
+  {
+   "id": 3,
+   "name": "Sports",
+   "slug": "sports",
+   "description": "Scores, fixtures and sports news.",
+   "icon_name": "sports_soccer",
+   "icon_url": "",
+   "background_url": "",
+   "color": "#FF00E676"
+  },
+  {
+   "id": 4,
+   "name": "Technology",
+   "slug": "technology",
+   "description": "Gadgets, science and the future.",
+   "icon_name": "memory",
+   "icon_url": "",
+   "background_url": "",
+   "color": "#FF00E5FF"
+  },
+  {
+   "id": 5,
+   "name": "Entertainment",
+   "slug": "entertainment",
+   "description": "Movies, music and celebrity news.",
+   "icon_name": "movie",
+   "icon_url": "",
+   "background_url": "",
+   "color": "#FFFFAB40"
+  },
+  {
+   "id": 6,
+   "name": "Education",
+   "slug": "education",
+   "description": "Learn something new every day.",
+   "icon_name": "school",
+   "icon_url": "",
+   "background_url": "",
+   "color": "#FF69F0AE"
+  },
+  {
+   "id": 7,
+   "name": "Information",
+   "slug": "information",
+   "description": "Weather, reference and useful services.",
+   "icon_name": "info",
+   "icon_url": "",
+   "background_url": "",
+   "color": "#FF40C4FF"
+  }
+ ],
+ "sites": [
+  {
+   "id": 1,
+   "category_id": 1,
+   "title": "BBC News",
+   "url": "https://www.bbc.com/news",
+   "description": "World news, analysis and video.",
+   "logo_url": "",
+   "background_url": "",
+   "animation_url": "",
+   "accent_color": "#FFBB1919",
+   "badge": "",
+   "tags": [
+    "news"
+   ],
+   "open_mode": "default",
+   "is_featured": true
+  },
+  {
+   "id": 6,
+   "category_id": 2,
+   "title": "YouTube Live",
+   "url": "https://www.youtube.com/live",
+   "description": "Live streams happening now.",
+   "logo_url": "",
+   "background_url": "",
+   "animation_url": "",
+   "accent_color": "#FFFF0000",
+   "badge": "LIVE",
+   "tags": [
+    "live streaming"
+   ],
+   "open_mode": "default",
+   "is_featured": true
+  },
+  {
+   "id": 9,
+   "category_id": 3,
+   "title": "ESPN",
+   "url": "https://www.espn.com",
+   "description": "Live scores and sports news.",
+   "logo_url": "",
+   "background_url": "",
+   "animation_url": "",
+   "accent_color": "#FFD00000",
+   "badge": "",
+   "tags": [
+    "sports"
+   ],
+   "open_mode": "default",
+   "is_featured": true
+  },
+  {
+   "id": 12,
+   "category_id": 4,
+   "title": "The Verge",
+   "url": "https://www.theverge.com",
+   "description": "Technology, science, art and culture.",
+   "logo_url": "",
+   "background_url": "",
+   "animation_url": "",
+   "accent_color": "#FFE5127D",
+   "badge": "",
+   "tags": [
+    "technology"
+   ],
+   "open_mode": "default",
+   "is_featured": false
+  },
+  {
+   "id": 15,
+   "category_id": 5,
+   "title": "IMDb",
+   "url": "https://www.imdb.com",
+   "description": "Movies, TV and celebrities.",
+   "logo_url": "",
+   "background_url": "",
+   "animation_url": "",
+   "accent_color": "#FFF5C518",
+   "badge": "",
+   "tags": [
+    "entertainment"
+   ],
+   "open_mode": "default",
+   "is_featured": false
+  },
+  {
+   "id": 17,
+   "category_id": 6,
+   "title": "Khan Academy",
+   "url": "https://www.khanacademy.org",
+   "description": "Free world-class education.",
+   "logo_url": "",
+   "background_url": "",
+   "animation_url": "",
+   "accent_color": "#FF14BF96",
+   "badge": "",
+   "tags": [
+    "education"
+   ],
+   "open_mode": "default",
+   "is_featured": false
+  },
+  {
+   "id": 19,
+   "category_id": 7,
+   "title": "Weather.com",
+   "url": "https://weather.com",
+   "description": "Local and national weather forecasts.",
+   "logo_url": "",
+   "background_url": "",
+   "animation_url": "",
+   "accent_color": "#FF1F6FB2",
+   "badge": "",
+   "tags": [
+    "information"
+   ],
+   "open_mode": "default",
+   "is_featured": false
+  },
+  {
+   "id": 2,
+   "category_id": 1,
+   "title": "Reuters",
+   "url": "https://www.reuters.com",
+   "description": "Business, financial and world news.",
+   "logo_url": "",
+   "background_url": "",
+   "animation_url": "",
+   "accent_color": "#FFFF8000",
+   "badge": "",
+   "tags": [
+    "news"
+   ],
+   "open_mode": "default",
+   "is_featured": true
+  },
+  {
+   "id": 7,
+   "category_id": 2,
+   "title": "Twitch",
+   "url": "https://www.twitch.tv",
+   "description": "Live streaming for gaming and more.",
+   "logo_url": "",
+   "background_url": "",
+   "animation_url": "",
+   "accent_color": "#FF9146FF",
+   "badge": "LIVE",
+   "tags": [
+    "live streaming"
+   ],
+   "open_mode": "default",
+   "is_featured": false
+  },
+  {
+   "id": 10,
+   "category_id": 3,
+   "title": "BBC Sport",
+   "url": "https://www.bbc.com/sport",
+   "description": "Sport news and live coverage.",
+   "logo_url": "",
+   "background_url": "",
+   "animation_url": "",
+   "accent_color": "#FFFFD230",
+   "badge": "",
+   "tags": [
+    "sports"
+   ],
+   "open_mode": "default",
+   "is_featured": false
+  },
+  {
+   "id": 13,
+   "category_id": 4,
+   "title": "TechCrunch",
+   "url": "https://techcrunch.com",
+   "description": "Startup and technology news.",
+   "logo_url": "",
+   "background_url": "",
+   "animation_url": "",
+   "accent_color": "#FF0A9E01",
+   "badge": "",
+   "tags": [
+    "technology"
+   ],
+   "open_mode": "default",
+   "is_featured": false
+  },
+  {
+   "id": 16,
+   "category_id": 5,
+   "title": "Rotten Tomatoes",
+   "url": "https://www.rottentomatoes.com",
+   "description": "Movie and TV reviews.",
+   "logo_url": "",
+   "background_url": "",
+   "animation_url": "",
+   "accent_color": "#FFFA320A",
+   "badge": "",
+   "tags": [
+    "entertainment"
+   ],
+   "open_mode": "default",
+   "is_featured": false
+  },
+  {
+   "id": 18,
+   "category_id": 6,
+   "title": "Wikipedia",
+   "url": "https://www.wikipedia.org",
+   "description": "The free encyclopedia.",
+   "logo_url": "",
+   "background_url": "",
+   "animation_url": "",
+   "accent_color": "#FF636466",
+   "badge": "",
+   "tags": [
+    "education"
+   ],
+   "open_mode": "default",
+   "is_featured": false
+  },
+  {
+   "id": 20,
+   "category_id": 7,
+   "title": "Time and Date",
+   "url": "https://www.timeanddate.com",
+   "description": "World clock, calendars and time zones.",
+   "logo_url": "",
+   "background_url": "",
+   "animation_url": "",
+   "accent_color": "#FF2B6CB0",
+   "badge": "",
+   "tags": [
+    "information"
+   ],
+   "open_mode": "default",
+   "is_featured": false
+  },
+  {
+   "id": 3,
+   "category_id": 1,
+   "title": "Al Jazeera",
+   "url": "https://www.aljazeera.com",
+   "description": "News from the Middle East and the world.",
+   "logo_url": "",
+   "background_url": "",
+   "animation_url": "",
+   "accent_color": "#FFFA9000",
+   "badge": "",
+   "tags": [
+    "news"
+   ],
+   "open_mode": "default",
+   "is_featured": false
+  },
+  {
+   "id": 8,
+   "category_id": 2,
+   "title": "Al Jazeera Live",
+   "url": "https://www.aljazeera.com/live",
+   "description": "24/7 live news coverage.",
+   "logo_url": "",
+   "background_url": "",
+   "animation_url": "",
+   "accent_color": "#FFFA9000",
+   "badge": "24/7",
+   "tags": [
+    "live streaming"
+   ],
+   "open_mode": "default",
+   "is_featured": false
+  },
+  {
+   "id": 11,
+   "category_id": 3,
+   "title": "ESPNcricinfo",
+   "url": "https://www.espncricinfo.com",
+   "description": "Live cricket scores and news.",
+   "logo_url": "",
+   "background_url": "",
+   "animation_url": "",
+   "accent_color": "#FF03A9F4",
+   "badge": "LIVE",
+   "tags": [
+    "sports"
+   ],
+   "open_mode": "default",
+   "is_featured": false
+  },
+  {
+   "id": 14,
+   "category_id": 4,
+   "title": "Ars Technica",
+   "url": "https://arstechnica.com",
+   "description": "Serious technology journalism.",
+   "logo_url": "",
+   "background_url": "",
+   "animation_url": "",
+   "accent_color": "#FFFF4E00",
+   "badge": "",
+   "tags": [
+    "technology"
+   ],
+   "open_mode": "default",
+   "is_featured": false
+  },
+  {
+   "id": 4,
+   "category_id": 1,
+   "title": "AP News",
+   "url": "https://apnews.com",
+   "description": "Independent global news organisation.",
+   "logo_url": "",
+   "background_url": "",
+   "animation_url": "",
+   "accent_color": "#FFE21F26",
+   "badge": "",
+   "tags": [
+    "news"
+   ],
+   "open_mode": "default",
+   "is_featured": false
+  },
+  {
+   "id": 5,
+   "category_id": 1,
+   "title": "The Guardian",
+   "url": "https://www.theguardian.com",
+   "description": "Independent journalism.",
+   "logo_url": "",
+   "background_url": "",
+   "animation_url": "",
+   "accent_color": "#FF052962",
+   "badge": "",
+   "tags": [
+    "news"
+   ],
+   "open_mode": "default",
+   "is_featured": false
+  }
+ ],
+ "featured": [
+  1,
+  2,
+  6,
+  9
+ ],
+ "version": "bundled-demo"
+}
