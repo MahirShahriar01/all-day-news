@@ -1,0 +1,30 @@
+{
+	email {$ACME_EMAIL}
+}
+
+{$DOMAIN} {
+	encode zstd gzip
+
+	# Upload limit for the admin media library (keep >= MAX_UPLOAD_MB).
+	request_body {
+		max_size 30MB
+	}
+
+	@api path /api/* /uploads/* /privacy-policy /docs /docs/* /redoc /openapi.json
+	handle @api {
+		reverse_proxy api:8000
+	}
+
+	handle /admin* {
+		reverse_proxy admin:80
+	}
+
+	handle {
+		redir /admin/ 302
+	}
+
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		-Server
+	}
+}
