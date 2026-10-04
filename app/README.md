@@ -1,17 +1,15 @@
-# all_in_one_news
+# All in One News: Flutter app (Android & iOS)
 
-All in One News - every channel, one place.
+```bash
+flutter pub get
+flutter run --dart-define=API_BASE_URL=http://10.0.2.2:8000   # Android emulator + local backend
+flutter run                                                    # bundled demo content
+flutter analyze && flutter test
+flutter build apk --release --dart-define=API_BASE_URL=https://news.example.com
+flutter build appbundle --release --dart-define=API_BASE_URL=https://news.example.com
+flutter build ipa --release --dart-define=API_BASE_URL=https://news.example.com   # macOS
+```
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* Code structure: [../docs/01-architecture.md](../docs/01-architecture.md#15-mobile-app-app)
+* Build & signing: [../BUILD_INSTRUCTIONS.md](../BUILD_INSTRUCTIONS.md)
+* Store release: [Google Play](../docs/10-play-store-release.md) · [App Store](../docs/11-app-store-release.md)
